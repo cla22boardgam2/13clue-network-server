@@ -1,0 +1,27 @@
+{
+  "name": "13clues-tablet-kit",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node -e \"require('fs').copyFileSync('index.source.html', 'index.html')\" && vite",
+    "build": "node scripts/buildSingle.cjs",
+    "server": "node server.cjs",
+    "preview": "vite preview",
+    "verify": "tsx scripts/verifySetup.ts"
+  },
+  "dependencies": {
+    "mqtt": "^5.16.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.3",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}
